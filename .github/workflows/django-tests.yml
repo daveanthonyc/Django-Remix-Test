@@ -2,7 +2,7 @@ name: Django CI
 
 on:
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ main]
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
     - name: Run Tests
       run: |
         cd backend
-        python manage.py test/
+        python manage.py test
